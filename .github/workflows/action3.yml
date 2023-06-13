@@ -18,4 +18,7 @@ jobs:
       - working-directory: ${{env.GITHUB_WORKSPACE}}
         run: ./hello.bat
       - name: List Environment Variables using cmd
-        run: set
+        run: SET
+        shell: cmd
+      - name: List Environment Variables using powershell
+        run: "[System.Environment]::GetEnvironmentVariables()"
