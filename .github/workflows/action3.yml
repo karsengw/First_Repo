@@ -17,3 +17,5 @@ jobs:
         run: ls ${{ github.workspace }}
       - working-directory: ${{env.GITHUB_WORKSPACE}}
         run: ./hello.bat
+      - name: List Environment Variables using cmd
+        run: set
